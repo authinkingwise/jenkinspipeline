@@ -1,7 +1,7 @@
 node {
     stage('repository_pull') {
      sh 'hostname'
-	 sh 'echo ${env:DEPLOYMENT-RELEASE}'
+	 sh 'echo $JAVA_HOME'
     }
     
     stage("composer_install") {
